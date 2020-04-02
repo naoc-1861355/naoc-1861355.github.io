@@ -1,0 +1,15 @@
+CSE 331 Homework.  Answers to written questions.
+Edit this file to supply your answers.
+
+Name:  <Mike Nao>
+
+Describe any additional functionality you added to your application, or any
+significant changes you made to the starter code beyond the basic requirements
+of the assignment, below:
+
+I add another button under the text box of EdgeList called "clear Text box". The clear Text box button just clear the text box,
+and don't do any change to the edge already in canvas, which means when pressing the button text in the textbox disappear
+and the drawing remain unchanged.
+
+Difference between "clear Text box" and "clear" is that clear change the graph, not the text in the textbox and clear text box
+change the text in textbox, not the graph.
