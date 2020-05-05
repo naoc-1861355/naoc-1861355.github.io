@@ -27,7 +27,10 @@
 	{
 		margin-top: 0;
 	}
-	
+	#rcorners2 {
+		border-radius: 25px;
+		border: 2px solid Red;
+	}
 	ol, ul
 	{
 		padding: 0;
