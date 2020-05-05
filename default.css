@@ -7,9 +7,9 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #202020;
+		background: gray;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 12pt;
+		font-size: 13pt;
 		font-weight: 300;
 		color: #444444;
 	}
@@ -20,7 +20,7 @@
 		margin: 0;
 		padding: 0;
 		font-weight: 600;
-		color: #333333;
+		color: red;
 	}
 	
 	p, ol, ul
@@ -36,7 +36,7 @@
 	
 	p
 	{
-		line-height: 180%;
+		line-height: 170%;
 	}
 	
 	strong
@@ -136,6 +136,7 @@
 	{
 		display: block;
 		text-decoration: none;
+		text-align: center;
 		color: #2D2D2D;
 	}
 	
@@ -163,17 +164,16 @@
 		float: left;
 		position: relative;
 		width: 100px;
-		height: 80px;
+		height: 150px;
 		margin: 0.5em 1.5em 0em 0.5em;
 		padding: 1.5em 0em 1.5em 0em;
 		box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
 		line-height: normal;
 		text-align: center;
 		text-transform: uppercase;
-		text-shadow: 0px 1px 0px rgba(0,0,0,.2);
 		font-size: 1em;
 		font-weight: 400;
-		border-right: 1px solid rgba(0,0,0,.1); 
+		border-right: 2px solid rgba(0,0,0,.1);
 	}
 	
 	ul.style1 .date:after
@@ -185,6 +185,7 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
+		color: black;
 		border-radius: 6px;
 	}
 	
@@ -425,6 +426,8 @@
 		display: inline-block;
 		margin-bottom: 1em;
 		border-radius: 50%;
+		height:32px ;
+		width:43px;
 	}
 
 /*********************************************************************************/
@@ -452,7 +455,7 @@
 		text-decoration:  none;
 		text-transform: uppercase;
 		font-weight: 700;
-		color: rgba(255,255,255,0.5);
+		color: pink;
 	}
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
@@ -497,8 +500,8 @@
 		float: right;
 		width: 800px;
 		padding: 3em 50px 5em 50px;
-		background: #FFF;
-		border-top: 6px solid #2980b9;
+		background: #f0cbb5;
+		border-top: 6px solid #444444;
 		text-align: center;
 	}
 
