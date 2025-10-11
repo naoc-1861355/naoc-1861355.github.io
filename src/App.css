@@ -59,3 +59,8 @@ ID of "app-title". Also makes the text bigger, bold, and adds some space around 
     font-weight: bold;
     margin: 10px;
 }
+
+/* Home page general resets and background fit */
+html, body, #root {
+    height: 100%;
+}
