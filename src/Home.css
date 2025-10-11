@@ -1,0 +1,30 @@
+html, body, #root {
+  height: 100%;
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(1200px at 50% 0, rgba(255, 255, 255, 0.06), transparent 80%), #0a0a0f;
+  color: #ffffff;
+}
+
+.home__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home__content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home__content p {
+  opacity: 0.8;
+}

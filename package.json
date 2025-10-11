@@ -1,0 +1,26 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naoc-1861355/naoc-1861355.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naoc-1861355/naoc-1861355.github.io/issues"
+  },
+  "homepage": "https://github.com/naoc-1861355/naoc-1861355.github.io#readme",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.9.1"
+  }
+}
