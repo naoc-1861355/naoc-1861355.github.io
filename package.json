@@ -2,8 +2,10 @@
   "name": "workspace",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir dist --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +24,8 @@
     "react-dom": "^19.2.0",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^3.9.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }
