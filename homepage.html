@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOMEPAGE</title>
+    <style>
+        html, body, #root {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .home {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            background: radial-gradient(1200px at 50% 0, rgba(255, 255, 255, 0.06), transparent 80%), #0a0a0f;
+            color: #ffffff;
+        }
+
+        .home__content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .home__content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .home__content p {
+            opacity: 0.8;
+        }
+
+        #tsparticles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="home">
+            <div id="tsparticles"></div>
+            <div class="home__content">
+                <h1>HOMEPAGE</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Load tsparticles from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.2/tsparticles.bundle.min.js"></script>
+    
+    <script>
+        // Wait for both DOM and tsparticles to load
+        function initParticles() {
+            if (typeof tsParticles !== 'undefined') {
+                // Particle configuration - modify these settings to customize
+                const config = {
+                    particles: {
+                        number: {
+                            value: 350  // Number of particles (try 30-100)
+                        },
+                        color: {
+                            value: "#ffffff"  // Particle color (try "#ff0000" for red, "#00ff00" for green)
+                        },
+                        shape: {
+                            type: "circle"  // Shape: "circle", "square", "triangle", "polygon"
+                        },
+                        opacity: {
+                            value: 0.8  // Opacity: 0.1 (faint) to 1.0 (solid)
+                        },
+                        size: {
+                            value: 3  // Size in pixels (try 1-10)
+                        },
+                        move: {
+                            enable: true,
+                            speed: 3,  // Movement speed (try 0.5-5)
+                            attract: {
+                                enable: true,
+                                rotateX: 600,
+                                rotateY: 1200
+                            }
+                        },
+                        links: {
+                            enable: true,  // Set to true to always show connections
+                            distance: 120,  // Distance for particle-to-particle connections
+                            opacity: 0.5,   // Opacity for particle-to-particle connections
+                            color: "#ffffff",
+                            triangles: {
+                                enable: false
+                            }
+                        }
+                    },
+                    interactivity: {
+                        events: {
+                            onHover: {
+                                enable: true,
+                                mode: ["connect"]  // Multiple modes: connect and attract
+                            },
+                            onClick: {
+                                enable: true,
+                                mode: "push"  // Click to push particles away
+                            }
+                        },
+                        modes: {
+                            connect: {
+                                distance: 15000,  // Mouse connection distance (different from particle links)
+                                links: {
+                                    opacity: 0.9,  // Mouse connection line opacity (brighter than particle links)
+                                    color: "#ffffff",
+                                    width: 2,      // Thicker lines for mouse connections
+                                    blink: false   // Don't blink, show solid lines
+                                }
+                            },
+                            attract: {
+                                distance: 200,  // Attraction distance
+                                duration: 0.5,  // Attraction duration
+                                speed: 1,       // Attraction speed
+                                factor: 1       // Attraction factor
+                            },
+                            push: {
+                                particles_nb: 4  // Number of particles to push
+                            }
+                        }
+                    }
+                };
+                
+                tsParticles.load("tsparticles", config);
+            }
+        }
+        
+        // Try multiple ways to initialize
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initParticles);
+        } else {
+            initParticles();
+        }
+        
+        // Also try after a short delay
+        setTimeout(initParticles, 1000);
+    </script>
+</body>
+</html>

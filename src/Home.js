@@ -53,8 +53,7 @@ export default function Home() {
     <div className="home">
       <Particles id="tsparticles" init={particlesInit} options={options} />
       <div className="home__content">
-        <h1>Home</h1>
-        <p>将鼠标悬停于背景，附近粒子会连线。</p>
+        <h1>HOMEPAGE</h1>
       </div>
     </div>
   );
